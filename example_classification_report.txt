@@ -1,0 +1,27 @@
+EVALUATION RESULTS
+============================================================
+Accuracy  : 0.9300  (93.0%)
+F1 Score  : 0.8700
+Precision : 0.8900
+Recall    : 0.8510
+
+Confusion Matrix:
+  TP: 120   FP: 15
+  FN: 21    TN: 3
+
+              precision    recall  f1-score   support
+
+      Normal       0.88      0.82      0.85        57
+ Papilledema       0.89      0.93      0.91       102
+
+    accuracy                           0.93       159
+   macro avg       0.89      0.87      0.88       159
+weighted avg       0.89      0.93      0.91       159
+
+------------------------------------------------------------
+Model trained on: 795 samples (80/20 split)
+  Papilledema: 561 (70.6%)
+  Normal:      234 (29.4%)
+Architecture: Custom 3D ResNet (~3.2M parameters)
+Hardware: NVIDIA RTX 5000 (16GB VRAM)
+Reference: Naghibzadeh et al., Tarbiat Modares University, 2023
