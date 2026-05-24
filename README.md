@@ -91,7 +91,7 @@ Raw .fda files
 [2] Convert to NIfTI         nibabel → .nii.gz (for visualization)
       │
       ▼
-[3] Crop ONH region          [40:190, 60:850, 130:400]  (identified)
+[3] Crop ONH region          [40:190, 60:850, 130:400] 
       │
       ▼
 [4] Normalize                ÷ 255  → [0, 1]
