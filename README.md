@@ -1,6 +1,6 @@
 # Papilledema Detection from 3D OCT Images using Deep Learning
 
-A deep learning pipeline for automated binary classification of **Optic Nerve Head (ONH)** 3D Optical Coherence Tomography (OCT) images — detecting the presence or absence of **papilledema** (optic disc swelling), a key biomarker of Idiopathic Intracranial Hypertension (IIH).
+A deep learning pipeline for automated binary classification of **Optic Nerve Head (ONH)** 3D Optical Coherence Tomography (OCT) images, detecting the presence or absence of **papilledema** (optic disc swelling), a key biomarker of Idiopathic Intracranial Hypertension (IIH).
 
 ---
 
@@ -88,10 +88,10 @@ Raw .fda files
 [1] Read OCT volume          oct_converter → np.ndarray (slices, H, W)
       │
       ▼
-[2] Convert to NIfTI         nibabel → .nii.gz (for MRIcroGL visualization)
+[2] Convert to NIfTI         nibabel → .nii.gz (for visualization)
       │
       ▼
-[3] Crop ONH region          [40:190, 60:850, 130:400]  (identified via MRIcroGL)
+[3] Crop ONH region          [40:190, 60:850, 130:400]  (identified)
       │
       ▼
 [4] Normalize                ÷ 255  → [0, 1]
@@ -175,7 +175,7 @@ data_dir/
     right_normal/     *.fda
 ```
 
-### 2. Convert to NIfTI (for visualization in MRIcroGL)
+### 2. Convert to NIfTI (for visualization)
 
 ```python
 from src.utils.nifti_converter import batch_convert_to_nifti
