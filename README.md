@@ -281,8 +281,8 @@ Download the checkpoint and place it in the `results/` folder before running `pr
 If you use this code in your research, please cite:
 
 ```bibtex
-@mastersthesis{naghibzadeh2023papilledema,
-  author    = {Naghibzadeh, Seyed Kianoosh},
+@mastersthesis{naghibzadeh 2023 papilledema,
+  author    = {Naghibzadeh, Kianoosh},
   title     = {Evaluation of the Images of Optic Nerve Head Using Image Processing and Artificial Intelligence},
   school    = {Tarbiat Modares University},
   year      = {2023},
